@@ -33,18 +33,21 @@
                                 <rect key="frame" x="0.0" y="70" width="375" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="144" id="Rx6-rD-bjO" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="144"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="145" id="Rx6-rD-bjO" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rx6-rD-bjO" id="jHL-Ql-ua2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="143.5"/>
+                                        <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rx6-rD-bjO" id="jHL-Ql-ua2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-Bt-n3O">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="143.5"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-Bt-n3O">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="160" id="UJZ-dz-CCN"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQR-y7-xS0">
-                                                    <rect key="frame" x="141" y="61.5" width="93" height="21"/>
+                                                    <rect key="frame" x="141" y="-10.5" width="93" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="5h8-E5-KdM"/>
                                                     </constraints>
@@ -54,26 +57,28 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="PAa-Bt-n3O" firstAttribute="leading" secondItem="jHL-Ql-ua2" secondAttribute="leading" id="3Ss-9T-1EP"/>
-                                                <constraint firstAttribute="bottom" secondItem="PAa-Bt-n3O" secondAttribute="bottom" id="JI9-wO-h04"/>
-                                                <constraint firstItem="PAa-Bt-n3O" firstAttribute="top" secondItem="jHL-Ql-ua2" secondAttribute="top" id="Pzo-hF-hFW"/>
-                                                <constraint firstItem="ZQR-y7-xS0" firstAttribute="centerX" secondItem="jHL-Ql-ua2" secondAttribute="centerX" id="blQ-1U-vvK"/>
-                                                <constraint firstItem="ZQR-y7-xS0" firstAttribute="centerY" secondItem="jHL-Ql-ua2" secondAttribute="centerY" id="dRo-gC-48h"/>
-                                                <constraint firstAttribute="trailing" secondItem="PAa-Bt-n3O" secondAttribute="trailing" id="wlL-eD-fpM"/>
+                                                <constraint firstItem="ZQR-y7-xS0" firstAttribute="centerX" secondItem="jHL-Ql-ua2" secondAttribute="centerX" id="70V-ar-Ma1"/>
+                                                <constraint firstAttribute="bottom" secondItem="PAa-Bt-n3O" secondAttribute="bottom" id="7Ny-uH-ETm"/>
+                                                <constraint firstAttribute="trailing" secondItem="PAa-Bt-n3O" secondAttribute="trailing" id="Csf-Dw-Cv7"/>
+                                                <constraint firstItem="PAa-Bt-n3O" firstAttribute="top" secondItem="jHL-Ql-ua2" secondAttribute="top" id="lxz-KO-jk9"/>
+                                                <constraint firstItem="PAa-Bt-n3O" firstAttribute="leading" secondItem="jHL-Ql-ua2" secondAttribute="leading" id="qCD-3Y-4PC"/>
+                                                <constraint firstItem="ZQR-y7-xS0" firstAttribute="centerY" secondItem="jHL-Ql-ua2" secondAttribute="centerY" id="tKc-bf-ZbP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryImage" destination="PAa-Bt-n3O" id="Ij0-Xy-VRy"/>
-                                            <outlet property="categoryTitle" destination="ZQR-y7-xS0" id="8de-zb-6ys"/>
+                                            <outlet property="categoryImage" destination="PAa-Bt-n3O" id="dVP-jH-CM9"/>
+                                            <outlet property="categoryTitle" destination="ZQR-y7-xS0" id="szJ-z0-VWn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gwX-Zi-y3j" secondAttribute="bottom" id="5iw-Ck-uqZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gwX-Zi-y3j" secondAttribute="trailing" id="6uS-qQ-JHv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HcX-My-Jah" secondAttribute="trailing" constant="194" id="7i4-IO-dTp"/>
                             <constraint firstItem="HcX-My-Jah" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Aka-3C-bBP"/>
                             <constraint firstItem="HcX-My-Jah" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="S0W-aj-GST"/>
                             <constraint firstItem="gwX-Zi-y3j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XH1-f4-BrT"/>
