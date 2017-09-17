@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,7 +42,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-Bt-n3O">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="153.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="160" id="UJZ-dz-CCN"/>
                                                     </constraints>
@@ -58,9 +59,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="ZQR-y7-xS0" firstAttribute="centerX" secondItem="jHL-Ql-ua2" secondAttribute="centerX" identifier="contentView005" id="70V-ar-Ma1"/>
-                                                <constraint firstAttribute="bottom" secondItem="PAa-Bt-n3O" secondAttribute="bottom" identifier="contentView001" id="7Ny-uH-ETm"/>
+                                                <constraint firstAttribute="bottom" secondItem="PAa-Bt-n3O" secondAttribute="bottom" constant="3" identifier="contentView001" id="7Ny-uH-ETm"/>
                                                 <constraint firstAttribute="trailing" secondItem="PAa-Bt-n3O" secondAttribute="trailing" identifier="contentView002" id="Csf-Dw-Cv7"/>
-                                                <constraint firstItem="PAa-Bt-n3O" firstAttribute="top" secondItem="jHL-Ql-ua2" secondAttribute="top" identifier="contentView003" id="lxz-KO-jk9"/>
+                                                <constraint firstItem="PAa-Bt-n3O" firstAttribute="top" secondItem="jHL-Ql-ua2" secondAttribute="top" constant="3" identifier="contentView003" id="lxz-KO-jk9"/>
                                                 <constraint firstItem="PAa-Bt-n3O" firstAttribute="leading" secondItem="jHL-Ql-ua2" secondAttribute="leading" identifier="contentView004" id="qCD-3Y-4PC"/>
                                                 <constraint firstItem="ZQR-y7-xS0" firstAttribute="centerY" secondItem="jHL-Ql-ua2" secondAttribute="centerY" identifier="contentView006" id="tKc-bf-ZbP"/>
                                             </constraints>
@@ -118,37 +119,34 @@
                                 <rect key="frame" x="0.0" y="70" width="375" height="533"/>
                                 <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hMD-Gw-kKC">
-                                    <size key="itemSize" width="192" height="219"/>
+                                    <size key="itemSize" width="178" height="251"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="yCr-6z-xYI" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="178" height="253"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="251"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="178" height="253"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="178" height="251"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt01" translatesAutoresizingMaskIntoConstraints="NO" id="9zZ-2G-kqY">
                                                     <rect key="frame" x="0.0" y="0.0" width="178" height="178"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="178" id="YRr-9j-NH5"/>
+                                                        <constraint firstAttribute="width" constant="178" id="g1B-zq-zMR"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslopes Logo Graphic T-Shirt" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lld-8d-Rrd">
-                                                    <rect key="frame" x="12" y="187" width="155" height="39"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="155" id="VcQ-Ew-lBd"/>
-                                                        <constraint firstAttribute="height" constant="39" id="mDw-Vp-f5W"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="12" y="187" width="154" height="36"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRr-FB-xov">
-                                                    <rect key="frame" x="12" y="225" width="155" height="28"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="$25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRr-FB-xov">
+                                                    <rect key="frame" x="12" y="225" width="154" height="26"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -157,21 +155,18 @@
                                         </view>
                                         <color key="backgroundColor" red="0.95149810322218054" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="PRr-FB-xov" secondAttribute="bottom" id="1RG-Ru-nFZ"/>
-                                            <constraint firstItem="Lld-8d-Rrd" firstAttribute="leading" secondItem="yCr-6z-xYI" secondAttribute="leading" constant="12" id="3Tg-9Z-1tj"/>
-                                            <constraint firstItem="Lld-8d-Rrd" firstAttribute="leading" secondItem="yCr-6z-xYI" secondAttribute="leading" constant="12" id="GU4-sY-DOJ"/>
-                                            <constraint firstItem="Lld-8d-Rrd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PRr-FB-xov" secondAttribute="leading" id="HYf-Uc-mWO"/>
-                                            <constraint firstAttribute="trailing" secondItem="Lld-8d-Rrd" secondAttribute="trailing" constant="11" id="Iai-aN-Gcv"/>
-                                            <constraint firstItem="9zZ-2G-kqY" firstAttribute="leading" secondItem="yCr-6z-xYI" secondAttribute="leading" id="Q9d-VX-2zA"/>
-                                            <constraint firstItem="Lld-8d-Rrd" firstAttribute="top" secondItem="yCr-6z-xYI" secondAttribute="top" constant="187" id="UGX-gd-8sq"/>
-                                            <constraint firstItem="Lld-8d-Rrd" firstAttribute="top" secondItem="9zZ-2G-kqY" secondAttribute="bottom" constant="9" id="eYB-9J-tAf"/>
-                                            <constraint firstAttribute="trailing" secondItem="PRr-FB-xov" secondAttribute="trailing" constant="11" id="hxr-QB-g1c"/>
-                                            <constraint firstItem="PRr-FB-xov" firstAttribute="leading" secondItem="yCr-6z-xYI" secondAttribute="leading" constant="12" id="itD-Cb-TWe"/>
-                                            <constraint firstAttribute="trailing" secondItem="9zZ-2G-kqY" secondAttribute="trailing" id="uC6-bz-1Pq"/>
-                                            <constraint firstItem="PRr-FB-xov" firstAttribute="top" secondItem="Lld-8d-Rrd" secondAttribute="bottom" constant="-1" id="uiO-UV-TC3"/>
-                                            <constraint firstItem="9zZ-2G-kqY" firstAttribute="top" secondItem="yCr-6z-xYI" secondAttribute="top" id="wff-P2-9gk"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Lld-8d-Rrd" secondAttribute="trailing" constant="12" identifier="prodCell04" id="IST-KT-Gbm"/>
+                                            <constraint firstItem="9zZ-2G-kqY" firstAttribute="leading" secondItem="yCr-6z-xYI" secondAttribute="leading" identifier="prodCell01" id="Rob-AD-gfL"/>
+                                            <constraint firstItem="9zZ-2G-kqY" firstAttribute="top" secondItem="yCr-6z-xYI" secondAttribute="top" identifier="prodCell02" id="SlV-2d-Cfg"/>
+                                            <constraint firstItem="PRr-FB-xov" firstAttribute="leading" secondItem="Lld-8d-Rrd" secondAttribute="leading" id="VIR-eJ-X27"/>
+                                            <constraint firstItem="PRr-FB-xov" firstAttribute="top" secondItem="Lld-8d-Rrd" secondAttribute="bottom" constant="2" identifier="prodCell08" id="Vra-67-1xX"/>
+                                            <constraint firstItem="Lld-8d-Rrd" firstAttribute="leading" secondItem="yCr-6z-xYI" secondAttribute="leadingMargin" constant="12" identifier="prodCell05" id="YPH-g0-qwl"/>
+                                            <constraint firstAttribute="trailing" secondItem="PRr-FB-xov" secondAttribute="trailing" constant="12" identifier="prodCell09" id="cbO-Mt-oih"/>
+                                            <constraint firstAttribute="bottom" secondItem="PRr-FB-xov" secondAttribute="bottom" identifier="prodCell10" id="jj4-Wo-3tM"/>
+                                            <constraint firstItem="Lld-8d-Rrd" firstAttribute="top" secondItem="9zZ-2G-kqY" secondAttribute="bottom" constant="9" identifier="prodCell06" id="rVB-lv-7iK"/>
+                                            <constraint firstAttribute="trailing" secondItem="9zZ-2G-kqY" secondAttribute="trailing" identifier="prodCell03" id="yu8-gC-olI"/>
                                         </constraints>
-                                        <size key="customSize" width="178" height="253"/>
+                                        <size key="customSize" width="178" height="251"/>
                                         <connections>
                                             <outlet property="productImage" destination="9zZ-2G-kqY" id="0pX-Ov-ixm"/>
                                             <outlet property="productPrice" destination="PRr-FB-xov" id="VIb-zz-aap"/>
