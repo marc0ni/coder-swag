@@ -43,7 +43,7 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-Bt-n3O">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="160" id="UJZ-dz-CCN"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="160" id="UJZ-dz-CCN"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQR-y7-xS0">
@@ -57,12 +57,12 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ZQR-y7-xS0" firstAttribute="centerX" secondItem="jHL-Ql-ua2" secondAttribute="centerX" id="70V-ar-Ma1"/>
-                                                <constraint firstAttribute="bottom" secondItem="PAa-Bt-n3O" secondAttribute="bottom" id="7Ny-uH-ETm"/>
-                                                <constraint firstAttribute="trailing" secondItem="PAa-Bt-n3O" secondAttribute="trailing" id="Csf-Dw-Cv7"/>
-                                                <constraint firstItem="PAa-Bt-n3O" firstAttribute="top" secondItem="jHL-Ql-ua2" secondAttribute="top" id="lxz-KO-jk9"/>
-                                                <constraint firstItem="PAa-Bt-n3O" firstAttribute="leading" secondItem="jHL-Ql-ua2" secondAttribute="leading" id="qCD-3Y-4PC"/>
-                                                <constraint firstItem="ZQR-y7-xS0" firstAttribute="centerY" secondItem="jHL-Ql-ua2" secondAttribute="centerY" id="tKc-bf-ZbP"/>
+                                                <constraint firstItem="ZQR-y7-xS0" firstAttribute="centerX" secondItem="jHL-Ql-ua2" secondAttribute="centerX" identifier="contentView005" id="70V-ar-Ma1"/>
+                                                <constraint firstAttribute="bottom" secondItem="PAa-Bt-n3O" secondAttribute="bottom" identifier="contentView001" id="7Ny-uH-ETm"/>
+                                                <constraint firstAttribute="trailing" secondItem="PAa-Bt-n3O" secondAttribute="trailing" identifier="contentView002" id="Csf-Dw-Cv7"/>
+                                                <constraint firstItem="PAa-Bt-n3O" firstAttribute="top" secondItem="jHL-Ql-ua2" secondAttribute="top" identifier="contentView003" id="lxz-KO-jk9"/>
+                                                <constraint firstItem="PAa-Bt-n3O" firstAttribute="leading" secondItem="jHL-Ql-ua2" secondAttribute="leading" identifier="contentView004" id="qCD-3Y-4PC"/>
+                                                <constraint firstItem="ZQR-y7-xS0" firstAttribute="centerY" secondItem="jHL-Ql-ua2" secondAttribute="centerY" identifier="contentView006" id="tKc-bf-ZbP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -76,30 +76,30 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gwX-Zi-y3j" secondAttribute="bottom" id="5iw-Ck-uqZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gwX-Zi-y3j" secondAttribute="trailing" id="6uS-qQ-JHv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HcX-My-Jah" secondAttribute="trailing" constant="194" id="7i4-IO-dTp"/>
-                            <constraint firstItem="HcX-My-Jah" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Aka-3C-bBP"/>
-                            <constraint firstItem="HcX-My-Jah" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="S0W-aj-GST"/>
-                            <constraint firstItem="gwX-Zi-y3j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XH1-f4-BrT"/>
-                            <constraint firstItem="gwX-Zi-y3j" firstAttribute="top" secondItem="HcX-My-Jah" secondAttribute="bottom" constant="16" id="grK-ce-dDL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gwX-Zi-y3j" secondAttribute="bottom" identifier="catTable001" id="5iw-Ck-uqZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gwX-Zi-y3j" secondAttribute="trailing" identifier="catTable002" id="6uS-qQ-JHv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HcX-My-Jah" secondAttribute="trailing" constant="194" identifier="catTable003" id="7i4-IO-dTp"/>
+                            <constraint firstItem="HcX-My-Jah" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" identifier="catTable004" id="Aka-3C-bBP"/>
+                            <constraint firstItem="HcX-My-Jah" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" identifier="catTable005" id="S0W-aj-GST"/>
+                            <constraint firstItem="gwX-Zi-y3j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" identifier="catTable006" id="XH1-f4-BrT"/>
+                            <constraint firstItem="gwX-Zi-y3j" firstAttribute="top" secondItem="HcX-My-Jah" secondAttribute="bottom" constant="16" identifier="catTable007" id="grK-ce-dDL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="CODER SWAG" id="cL8-46-j1b"/>
                     <connections>
                         <outlet property="categoryTable" destination="gwX-Zi-y3j" id="HQb-Wf-X6m"/>
-                        <segue destination="xb0-XB-Tx1" kind="show" id="fbW-oX-dOy"/>
+                        <segue destination="xb0-XB-Tx1" kind="show" identifier="ProductsVC" id="fbW-oX-dOy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="372" y="32.833583208395808"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="WV9-S6-5MA">
             <objects>
-                <viewController id="xb0-XB-Tx1" sceneMemberID="viewController">
+                <viewController id="xb0-XB-Tx1" customClass="ProductsVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" semanticContentAttribute="spatial" id="VoH-uH-mtk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +124,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yCr-6z-xYI" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="yCr-6z-xYI" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="253"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -193,6 +193,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="e9i-GU-Ssr"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="9hP-bV-6xQ" id="NkY-UE-kmB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbr-M3-YP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
